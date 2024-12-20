@@ -200,3 +200,145 @@ main > .content-form .cart-item
     margin-bottom: 2px !important;
 }
 
+/* My changes */
+
+/* Smooth hover animation */
+.product .photo > img {
+    width: 33%;
+    cursor: pointer;
+    border: solid 1px #ccc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product .photo > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 1960s Pop Pastel Colors */
+:root {
+    --bg-color-light: #FAF7F0; /* Light pastel background */
+    --text-color-light: #333333; /* Dark text for contrast */
+    --primary-color-light: #F7A6C1; /* Pastel Pink */
+    --secondary-color-light: #A9E4B0; /* Pastel Green */
+    --accent-color-light: #F9E25A; /* Pastel Yellow */
+    --header-bg-light: #FFFFFF; /* White header */
+    --header-border-light: #E0E0E0; /* Soft grey border */
+    --card-bg-light: #FFFFFF; /* White card background */
+    --footer-bg-light: #F1F1F1; /* Soft footer background */
+    --button-bg-light: #F8B1A5; /* Soft Coral button background */
+}
+
+/* Dark Mode with Soft Pastels */
+[data-theme="dark"] {
+    --bg-color-dark: #222222; /* Dark background for dark mode */
+    --text-color-dark: #F9E25A; /* Light pastel yellow text */
+    --primary-color-dark: #F7A6C1; /* Pastel Pink for dark mode */
+    --secondary-color-dark: #A9E4B0; /* Pastel Green */
+    --accent-color-dark: #F8B1A5; /* Soft Coral */
+    --header-bg-dark: #333333; /* Dark header background */
+    --header-border-dark: #444444; /* Dark border */
+    --card-bg-dark: #444444; /* Darker card background */
+    --footer-bg-dark: #222222; /* Dark footer background */
+    --button-bg-dark: #F9E25A; /* Pastel Yellow button background */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    background-color: var(--header-bg-light);
+    border-bottom: 1px solid var(--header-border-light);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Links */
+a {
+    color: var(--primary-color-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color-light);
+}
+
+/* Buttons */
+button {
+    background-color: var(--button-bg-light);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-color-light);
+}
+
+/* Cards / Products */
+.product {
+    background-color: var(--card-bg-light);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Price */
+.product .price {
+    font-weight: 600;
+    color: var(--primary-color-light);
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] body {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+[data-theme="dark"] header {
+    background-color: var(--header-bg-dark);
+    border-bottom: 1px solid var(--header-border-dark);
+}
+
+[data-theme="dark"] a {
+    color: var(--primary-color-dark);
+}
+
+[data-theme="dark"] a:hover {
+    color: var(--secondary-color-dark);
+}
+
+[data-theme="dark"] .product {
+    background-color: var(--card-bg-dark);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] button {
+    background-color: var(--button-bg-dark);
+}
+
+[data-theme="dark"] button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+
+
