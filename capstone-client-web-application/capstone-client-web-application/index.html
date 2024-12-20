@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Retro Pastel Shop</title>
 
-    <!--  CSS  -->
+    <!-- Google Font for Retro Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
     <link rel="stylesheet" href="css/lib/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
 
-    <!--  JS  -->
+    <!-- JS Links -->
     <script src="js/lib/axios.min.js"></script>
     <script src="js/lib/mustache.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
@@ -25,23 +28,31 @@
 
     <script src="js/filter.js"></script>
 
-
     <script src="js/application.js"></script>
 </head>
-<body>
+<body data-theme="light"> <!-- Default theme is light mode -->
 
-    <header id="header-user"></header>
+<!-- Header -->
+<header id="header-user"></header>
 
-    <section id="errors">
-    </section>
+<!-- Error Section -->
+<section id="errors"></section>
 
-    <section id="login"></section>
+<!-- Login Section -->
+<section id="login"></section>
 
-    <main id="main">
-    </main>
+<!-- Main Content -->
+<main id="main"></main>
 
-    <footer></footer>
+<!-- Footer -->
+<footer></footer>
 
+<!-- Theme Toggle Button -->
+<button id="theme-toggle" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; font-size: 16px; cursor: pointer;">
+    🌙 Switch to Dark Mode
+</button>
 
+<script src="js/theme-toggle.js"></script> <!-- Link to the dark mode toggle script -->
 </body>
 </html>
+
