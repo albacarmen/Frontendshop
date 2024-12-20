@@ -304,6 +304,48 @@ header {
     background-color: var(--accent-color-dark);
 }
 
+/* Default Light Mode Styles */
+body {
+    background-color: #fff; /* Light background */
+    color: #333; /* Dark text for readability */
+}
+
+header {
+    background-color: #f8f9fa; /* Light header */
+    color: #333;
+}
+
+footer {
+    background-color: #f8f9fa; /* Light footer */
+}
+
+/* Dark Mode Styles */
+body[data-theme='dark'] {
+    background-color: #2c2c2c; /* Dark background */
+    color: #f1f1f1; /* Light text */
+}
+
+header[data-theme='dark'] {
+    background-color: #444; /* Dark header */
+    color: #f1f1f1;
+}
+
+footer[data-theme='dark'] {
+    background-color: #444; /* Dark footer */
+    color: #f1f1f1;
+}
+
+/* Optionally, add more specific styles for dark mode */
+.category-item[data-theme='dark'] {
+    background-color: #555; /* Dark category background */
+    color: #f1f1f1;
+}
+
+.product[data-theme='dark'] {
+    background-color: #555; /* Dark product background */
+    color: #f1f1f1;
+}
+
 
 
 
